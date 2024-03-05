@@ -1,16 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import sidebarLinks from '../constants';
-import type { INavLink } from '../types';
+import type { INavLink, ISidebar } from '../types';
 
-interface Props {
-  isMenuHidden: boolean;
-}
-
-const LeftSidebar: React.FC = ({ isMenuHidden }: Props) => {
+const LeftSidebar: React.FC<ISidebar> = ({ isHidden }) => {
   const { pathname } = useLocation();
   return (
-    <nav className={isMenuHidden ? 'leftsidebar-hidden ' : 'leftsidebar'}>
+    <nav className={isHidden ? 'leftsidebar-hidden ' : 'leftsidebar'}>
       <ul className="flex flex-col  ">
         {sidebarLinks.map((link: INavLink) => {
           const isActive = pathname === link.route;

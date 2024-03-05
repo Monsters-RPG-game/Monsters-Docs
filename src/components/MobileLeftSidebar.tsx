@@ -1,17 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import sidebarLinks from '../constants';
-import type { INavLink } from '../types';
+import type { IMobileSidebar, INavLink } from '../types';
 
-interface Props {
-  isMobileHidden: boolean;
-  handleMobileMenu: () => void;
-}
-
-const MobileLeftSidebar: React.FC = ({ isMobileMenuHidden, handleMobileMenu }: Props) => {
+const MobileLeftSidebar: React.FC<IMobileSidebar> = ({ isHidden, toggleMenu }) => {
   const { pathname } = useLocation();
   return (
-    <nav className={isMobileMenuHidden ? 'leftsidebar_mobile-hidden ' : 'leftsidebar_mobile'}>
+    <nav className={isHidden ? 'leftsidebar_mobile-hidden ' : 'leftsidebar_mobile'}>
       <ul className="flex flex-col  ">
         {sidebarLinks.map((link: INavLink) => {
           const isActive = pathname === link.route;
@@ -20,7 +15,7 @@ const MobileLeftSidebar: React.FC = ({ isMobileMenuHidden, handleMobileMenu }: P
               to={link.route}
               key={link.label}
               className={`leftsidebar-link  group ${isActive && 'text-rose-600'}`}
-              onClick={handleMobileMenu}
+              onClick={toggleMenu}
             >
               <li className="">{link.label}</li>
             </NavLink>

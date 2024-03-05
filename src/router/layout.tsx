@@ -5,11 +5,11 @@ import TopNavbar from '../components/TopNavbar';
 import MobileLeftSidebar from '../components/MobileLeftSidebar';
 
 const RootLayout: React.FC = () => {
-  const [isMenuHidden, setIsMenuHidden] = useState<boolean>(false);
+  const [isHidden, setIsHidden] = useState<boolean>(false);
   const [isMobileMenuHidden, setIsMobileMenuHidden] = useState<boolean>(false);
 
   const handleMenuHide = (): void => {
-    setIsMenuHidden(!isMenuHidden);
+    setIsHidden(!isHidden);
   };
 
   const handleMobileMenu = (): void => {
@@ -20,8 +20,11 @@ const RootLayout: React.FC = () => {
     <div className="w-full flex flex-col  ">
       <TopNavbar handleMenuHide={handleMenuHide} handleMobileMenu={handleMobileMenu} />
       <main className=" flex">
-        <LeftSidebar isMenuHidden={isMenuHidden} />
-        <MobileLeftSidebar isMobileMenuHidden={isMobileMenuHidden} handleMobileMenu={handleMobileMenu} />
+        <LeftSidebar isHidden={isHidden} />
+        <MobileLeftSidebar
+          isHidden={isMobileMenuHidden}
+          toggleMenu={() => setIsMobileMenuHidden(!isMobileMenuHidden)}
+        />
         <section className="flex flex-1 h-full overflow-scroll custom-scrollbar  ">
           <Outlet />
         </section>

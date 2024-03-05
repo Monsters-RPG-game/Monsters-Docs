@@ -1,4 +1,1 @@
-export interface INavLink {
-    route: string;
-    label: string;
-}
+export * from './navbar';
