@@ -46,6 +46,7 @@
     "useDefineForClassFields": true
   },
   "include": [
-    "src"
+    "src",
+    "vite.config.ts"
   ]
 }
