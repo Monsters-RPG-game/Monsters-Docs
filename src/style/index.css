@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -9,73 +9,141 @@
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
+
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
- 
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
+
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
- 
+
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
- 
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
- 
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
- 
+
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
- 
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
+
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
- 
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
+
 @layer utilities {
   .text-shadow {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
+
+.base-medium {
+  @apply text-[16px] font-semibold leading-[160%];
+}
+
+.leftsidebar {
+  @apply hidden md:flex md:min-w-[200px] px-6 pt-10 pb-28 flex-col gap-8 duration-200  lg:min-w-[250px] bg-gray-200 ;
+}
+
+.leftsidebar-hidden {
+  @apply hidden md:flex px-6 pt-10 pb-28 flex-col gap-8 duration-200 min-w-[100px] bg-gray-200;
+}
+
+.leftsidebar_mobile {
+  @apply hidden px-6 pt-10 pb-28 flex-col md:hidden  gap-8 min-w-[160px] bg-gray-200 ;
+
+}
+
+.leftsidebar_mobile-hidden {
+  @apply flex md:hidden px-6 pt-10 pb-28 flex-col gap-8 duration-200  min-w-[160px] bg-gray-200
+}
+
+
+.leftsidebar-link {
+  @apply base-medium hover:text-rose-600  py-1   ;
+}
+
+.leftsidebar_burger {
+  @apply border border-dark-4  min-w-[22px] group-hover:border-slate-400 duration-150;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5c5c7b;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #7878a3;
+}
+
+.common-container {
+  @apply h-screen w-full flex flex-col flex-1 gap-10 overflow-scroll py-20 px-5 md:px-8 lg:p-20 custom-scrollbar;
+}
+
+.common-container_header {
+  @apply text-gray-900 font-semibold text-3xl border-b py-2
+}
+
+.common-small-container_header {
+  @apply text-gray-900 font-semibold text-2xl border-b py-2
+}
+
+.common-container_content {
+  @apply text-gray-800;
 }
