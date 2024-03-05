@@ -3,7 +3,7 @@ import Router from './router';
 
 const App: React.FC = () => {
   return (
-    <main className="bg-[#010b00] h-screen w-full">
+    <main className="bg-gray-100 h-screen w-full overflow-hidden ">
       <Router />
     </main>
   );
