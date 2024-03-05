@@ -79,3 +79,65 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
+
+
+  .base-medium {
+    @apply text-[16px] font-semibold leading-[160%];
+  }
+
+  .leftsidebar {
+    @apply hidden md:flex md:min-w-[200px] px-6 pt-10 pb-28 flex-col gap-8 duration-200  lg:min-w-[250px] bg-gray-200 ;
+  }
+
+    .leftsidebar-hidden {
+    @apply hidden md:flex px-6 pt-10 pb-28 flex-col gap-8 duration-200 min-w-[100px] bg-gray-200;
+  }
+
+   .leftsidebar_mobile {
+    @apply hidden px-6 pt-10 pb-28 flex-col md:hidden  gap-8 min-w-[160px] bg-gray-200 ;
+    
+  }
+
+    .leftsidebar_mobile-hidden {
+    @apply flex md:hidden px-6 pt-10 pb-28 flex-col gap-8 duration-200  min-w-[160px] bg-gray-200
+  }
+
+
+
+  .leftsidebar-link {
+    @apply  base-medium hover:text-rose-600  py-1   ;
+  }
+
+    .leftsidebar_burger {
+@apply border border-dark-4  min-w-[22px] group-hover:border-slate-400 duration-150;
+    }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+
+   .common-container {
+    @apply h-screen w-full flex flex-col flex-1 gap-10 overflow-scroll py-20 px-5 md:px-8 lg:p-20 custom-scrollbar;
+  }
+
+  .common-container_header {
+    @apply text-gray-900 font-semibold text-3xl border-b py-2
+  }
+    .common-container_content {
+    @apply text-gray-800;
+  }
