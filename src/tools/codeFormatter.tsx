@@ -87,10 +87,29 @@ const formatJson = (data: Record<string, unknown>): ReactElement => {
   return <div className="code">{children}</div>;
 };
 
+const formatEnv = (data: Record<string, unknown>): ReactElement => {
+  const children: ReactElement[] = Object.entries(data).map(([k, v]) => {
+    return (
+      <>
+        <p className="inline">
+          <span style={{ whiteSpace: 'pre' }} className="text-rose-500 inline">
+            &quot;{k}&quot;
+          </span>
+          :<span className="text-blue-400 inline"> &quot;{v as string}&quot;</span>,
+        </p>
+        <br />
+      </>
+    );
+  });
+  return <div className="code">{children}</div>;
+};
+
 const generateCode = <T extends ECodeType>(type: T, data: ICodeFormatInput[T]): ReactElement | null => {
   switch (type) {
     case ECodeType.Json:
       return formatJson(data as Record<string, unknown>);
+    case ECodeType.Env:
+      return formatEnv(data as Record<string, unknown>);
     default:
       console.log('Unsupported code format');
       return null;

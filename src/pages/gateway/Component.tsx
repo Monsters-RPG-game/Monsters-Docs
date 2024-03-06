@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import * as animation from '../../style/animation';
 import configFile from './configfile.json';
 import { ECodeType } from '../../enums';
@@ -15,48 +14,88 @@ const Gateway: React.FC = () => {
           Gateway is main service included in this project. Its job is to transfer user&quot;s requests to each
           microservice. It also handles caching user&apos;s data, authorization and real-time notifications. You can
           find it on{' '}
-          <Link to="https://github.com/Virus288/Monsters-gateway" className="leftsidebar-link group">
+          <a
+            href="https://github.com/Virus288/Monsters-gateway"
+            target="_blank"
+            rel="noreferrer"
+            className="leftsidebar-link group"
+          >
             Github
-          </Link>
+          </a>
         </p>
 
         <h2 className="common-small-container_header">1.1 Tech stack</h2>
         <p className="my-3">
           This service is written in node.js. Core components are:
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/express" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/express"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Express
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/amqplib" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/amqplib"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               RabbitMq
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/ejs" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/ejs"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Ejs
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/knex" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/knex"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Knex
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/oidc-provider" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/oidc-provider"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Oidc
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/redis" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/redis"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Redis
-            </Link>
+            </a>
           </li>
           <li className="text-rose-400">
-            <Link to="https://www.npmjs.com/package/ws" className="leftsidebar-link group">
+            <a
+              href="https://www.npmjs.com/package/ws"
+              target="_blank"
+              rel="noreferrer"
+              className="leftsidebar-link group"
+            >
               Ws
-            </Link>
+            </a>
           </li>
         </p>
 
@@ -138,8 +177,8 @@ const Gateway: React.FC = () => {
         <h2 className="common-small-container_header">1.5 Tests</h2>
         <p className="my-3">
           This project has 3 types of tests. Unit, db and e2e. All tests are written in jest, which is also used to mock
-          methods. MongoDB mocks are made using mongodb-memory-server. E2e tests are using superTest to send requests on
-          started server. Websocket tests are made using MocSocket
+          methods. E2e tests are using superTest to send requests on started server. Websocket tests are made using
+          MocSocket
         </p>
       </main>
     </motion.div>
