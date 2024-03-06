@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import * as animation from '../../style/animation';
 
 const Contributions: React.FC = () => {
@@ -12,17 +11,17 @@ const Contributions: React.FC = () => {
         <div className="my-3 flex flex-col">
           <h3 className="common-vsmall-container_header">
             Adam ( HurasAdam )
-            <Link className="block leftsidebar-link group" to="https://github.com/HurasAdam">
+            <a href="https://github.com/HurasAdam" target="_blank" rel="noreferrer" className="leftsidebar-link group">
               Github
-            </Link>
+            </a>
           </h3>
           <p>Web developer, UI designer.</p>
 
           <h3 className="common-vsmall-container_header">
             Jakub ( Virus288 )
-            <Link className="block leftsidebar-link group" to="https://github.com/Virus288">
+            <a href="https://github.com/Virus288" target="_blank" rel="noreferrer" className="leftsidebar-link group">
               Github
-            </Link>
+            </a>
           </h3>
           <p>Fullstack developer, Project owner.</p>
         </div>

@@ -1,0 +1,18 @@
+{
+  "amqpURI": "rabbitUrl",
+  "redisURI": "redisUrl",
+  "corsOrigin": "*",
+  "myAddress": "http://localhost",
+  "httpPort": 80,
+  "socketPort": 81,
+  "mysql": {
+    "user": "mysqlUser",
+    "password": "mysqlPassword",
+    "host": "host",
+    "db": "db"
+  },
+  "session": {
+    "secret": "sessionSecret",
+    "secured": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "VITE_API_BACKEND": "backend address",
+  "VITE_API_WS_BACKEND": "websocket backend address",
+  "VITE_API_REDIRECT_LOGIN_URL": "preconfigured address for oidc to redirect",
+  "VITE_API_HOME": "application address",
+  "VITE_API_CLIENT_SECRET": "oidc client secret key",
+  "VITE_API_CLIENT_ID": "oidc client id"
+}

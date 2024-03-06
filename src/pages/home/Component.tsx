@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
 import * as animation from '../../style/animation';
 
 const Home: React.FC = () => {
@@ -85,13 +84,23 @@ const Home: React.FC = () => {
         <p className="my-3">
           Remember that this is WIP ( work in progress ) project. Expect missing elements and/or bugs. We are small team
           of people working in our free time. Wanna help ? Found a bug ? See anything wrong ? Drop new issue on{' '}
-          <NavLink to="https://github.com/Virus288/Monsters-gateway" className="leftsidebar-link group">
+          <a
+            href="https://github.com/Virus288/Monsters-gateway"
+            target="_blank"
+            rel="noreferrer"
+            className="leftsidebar-link group"
+          >
             Github
-          </NavLink>{' '}
+          </a>{' '}
           or message me on{' '}
-          <NavLink to="discordapp.com/users/virus288" className="leftsidebar-link group">
+          <a
+            href="https://discordapp.com/users/virus288"
+            target="_blank"
+            rel="noreferrer"
+            className="leftsidebar-link group"
+          >
             Discord
-          </NavLink>
+          </a>
         </p>
       </main>
     </motion.div>

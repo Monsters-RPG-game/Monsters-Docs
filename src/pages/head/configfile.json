@@ -1,0 +1,10 @@
+{
+  "MONGO_PASSWORD": "pass",
+  "MONGO_CLIENT": "client",
+  "RABBIT_PASSWORD": "pass",
+  "RABBIT_CLIENT": "pass",
+  "REDIS_PASSWORD": "pass",
+  "MYSQL_PASSWORD": "pass",
+  "MYSQL_ROOT_PASSWORD": "pass",
+  "MYSQL_USER": "user"
+}
