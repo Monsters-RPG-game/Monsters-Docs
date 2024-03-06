@@ -1,10 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import Home from '../pages/Home';
-import ErrorPage from '../pages/ErrorPage';
+import { Contributions, FourOhFour, Home, Roadmap } from '../pages';
 import Layout from './layout';
-import Two from '../pages/Two';
 
 const Routers: React.FC = () => {
   return (
@@ -12,8 +10,10 @@ const Routers: React.FC = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/two" element={<Two />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/two" element={<Contributions />} />
+          <Route path="/contributions" element={<Contributions />} />
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="*" element={<FourOhFour />} />
         </Route>
       </Routes>
     </AnimatePresence>

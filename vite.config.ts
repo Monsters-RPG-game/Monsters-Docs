@@ -91,4 +91,10 @@ module.exports = {
   },
   // eslint-disable-next-line global-require
   plugins: [require('tailwindcss-animate')],
+  server: {
+    port: 3006,
+  },
+  build: {
+    outDir: 'dist',
+  },
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import * as animation from '../style/animation';
+import * as animation from '../../style/animation';
 
-const ErrorPage: React.FC = () => {
+const FourOhFour: React.FC = () => {
   const navigate = useNavigate();
 
   return (
@@ -22,4 +22,4 @@ const ErrorPage: React.FC = () => {
   );
 };
 
-export default ErrorPage;
+export default FourOhFour;
