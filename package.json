@@ -14,7 +14,7 @@
     "listErrors": "node_modules/.bin/tsc --noEmit --skipLibCheck",
     "lintStaged": "npx lint-staged",
     "preview": "vite preview",
-    "prepareHooks": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -62,6 +62,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "^9.0.11",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
