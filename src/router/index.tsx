@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import { Contributions, FourOhFour, Home, Roadmap } from '../pages';
+import { Contributions, FourOhFour, Gateway, Home, Roadmap } from '../pages';
 import Layout from './layout';
 
 const Routers: React.FC = () => {
@@ -13,6 +13,7 @@ const Routers: React.FC = () => {
           <Route path="/two" element={<Contributions />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/services/gateway" element={<Gateway />} />
           <Route path="*" element={<FourOhFour />} />
         </Route>
       </Routes>

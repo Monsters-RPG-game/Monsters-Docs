@@ -151,3 +151,19 @@
 .common-container_content {
   @apply text-gray-800;
 }
+
+.code {
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 5px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.codeLine {
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 2px;
+}
