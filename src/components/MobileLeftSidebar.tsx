@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import sidebarLinks from '../constants';
+import { sidebarLinks } from '../constants';
 import type { IMobileSidebar, INavLink } from '../types';
 
 const MobileLeftSidebar: React.FC<IMobileSidebar> = ({ isHidden, toggleMenu }) => {
@@ -24,9 +24,14 @@ const MobileLeftSidebar: React.FC<IMobileSidebar> = ({ isHidden, toggleMenu }) =
       </ul>
       <div>
         Designed with love
-        <NavLink className="block leftsidebar-link group" to="https://github.com/HurasAdam">
+        <a
+          className="block leftsidebar-link group"
+          href="https://github.com/HurasAdam"
+          target="_blank"
+          rel="noreferrer"
+        >
           HurasAdam
-        </NavLink>
+        </a>
       </div>
     </nav>
   );

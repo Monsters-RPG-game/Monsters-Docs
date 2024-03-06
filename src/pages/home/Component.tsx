@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <main className="common-container_content">
         <p className="my-3">
           Welcome to documentation of Open-Source backend for RPG games. Codename
-          <h2 className="inline text-rose-600 text-sm md:text-lg lg:text-xl font-bold"> &quot;Monsters&quot;</h2>.
+          <span className="inline text-rose-600 text-sm md:text-lg lg:text-xl font-bold"> &quot;Monsters&quot;</span>.
         </p>
         <p className="my-3">
           This website will try to explain services mechanics, how they work, how you can start them on your own and how

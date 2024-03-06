@@ -12,9 +12,14 @@ const Roadmap: React.FC = () => {
           Well. Its important to have 1 but in current state we don&apos;t. All we have now are personal notes of what
           we can add to this project, and idea of how it should look like. Are you a game designer ? Would you like to
           create idea of how this project should look like from user perspective? Create new issue on{' '}
-          <Link to="https://github.com/Virus288/Monsters-gateway" className="leftsidebar-link group">
+          <a
+            href="https://github.com/Virus288/Monsters-gateway"
+            target="_blank"
+            rel="noreferrer"
+            className="leftsidebar-link group"
+          >
             Github
-          </Link>
+          </a>
         </p>
       </main>
     </motion.div>
