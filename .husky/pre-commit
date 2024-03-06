@@ -3,3 +3,5 @@
 
 echo "Running lint-staged"
 npm run lintStaged
+echo "Looking for errors"
+npm run listErrors

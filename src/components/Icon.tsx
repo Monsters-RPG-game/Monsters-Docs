@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { IIconProps } from '../types';
 
-const Icon = ({ icon, link, color }: IIconProps) => {
+const Icon: React.FC<IIconProps> = ({ icon, link, color }) => {
+  const navigate = useNavigate();
+
   return (
+    // eslint-disable-next-line jsx-a11y/control-has-associated-label
     <a href={link} target="_blank" rel="noreferrer">
-      <div className=" cursor-pointer  " a={link}>
+      <div className="cursor-pointer" onClick={() => navigate(link)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
