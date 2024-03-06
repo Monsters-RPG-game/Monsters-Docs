@@ -6,7 +6,7 @@ import type { IMobileSidebar, INavLink } from '../types';
 const MobileLeftSidebar: React.FC<IMobileSidebar> = ({ isHidden, toggleMenu }) => {
   const { pathname } = useLocation();
   return (
-    <nav className={isHidden ? 'leftsidebar_mobile-hidden ' : 'leftsidebar_mobile'}>
+    <nav className={`${isHidden ? 'leftsidebar_mobile-hidden ' : 'leftsidebar_mobile'} flex flex-col justify-between`}>
       <ul className="flex flex-col  ">
         {sidebarLinks.map((link: INavLink) => {
           const isActive = pathname === link.route;
@@ -22,6 +22,12 @@ const MobileLeftSidebar: React.FC<IMobileSidebar> = ({ isHidden, toggleMenu }) =
           );
         })}
       </ul>
+      <div>
+        Designed with love
+        <NavLink className="block leftsidebar-link group" to="https://github.com/HurasAdam">
+          HurasAdam
+        </NavLink>
+      </div>
     </nav>
   );
 };

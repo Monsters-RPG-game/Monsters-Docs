@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
-import * as animation from '../style/animation';
+import * as animation from '../../style/animation';
 
 const Home: React.FC = () => {
   return (

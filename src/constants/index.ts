@@ -6,8 +6,12 @@ const sidebarLinks: INavLink[] = [
     label: 'Home',
   },
   {
-    route: '/two',
-    label: 'Placeholder',
+    route: '/contributions',
+    label: 'Contributions',
+  },
+  {
+    route: '/roadmap',
+    label: 'Roadmap',
   },
   {
     route: '/services/gateway',

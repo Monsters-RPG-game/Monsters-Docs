@@ -144,6 +144,10 @@
   @apply text-gray-900 font-semibold text-2xl border-b py-2
 }
 
+.common-vsmall-container_header {
+  @apply text-gray-900 font-semibold text-lg border-b py-2
+}
+
 .common-container_content {
   @apply text-gray-800;
 }
