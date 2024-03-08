@@ -30,3 +30,6 @@ tsconfig.tsbuildinfo
 yarn.lock
 package-lock.json
 yarn-error.json
+
+# Eslint cache
+.eslintcache
