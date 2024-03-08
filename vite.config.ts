@@ -95,6 +95,6 @@ module.exports = {
     port: 3006,
   },
   build: {
-    outDir: 'dist',
+    outDir: 'build',
   },
 };
