@@ -14,6 +14,10 @@ const sidebarLinks: INavLink[] = [
     label: 'Roadmap',
   },
   {
+    route: '/newclient ',
+    label: 'Create new client',
+  },
+  {
     route: '/services/gateway',
     label: 'Gateway',
   },
