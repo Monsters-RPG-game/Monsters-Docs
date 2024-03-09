@@ -80,6 +80,11 @@ const Home: React.FC = () => {
           it
         </p>
 
+        <h2 className="common-small-container_header">Example data flow</h2>
+        <p className="my-3">Diagram below shows example data flow in application</p>
+
+        <img src="../../../public/diagrams/general_overview.png" alt="Logo" />
+
         <h2 className="common-small-container_header">Wrapping up</h2>
         <p className="my-3">
           Remember that this is WIP ( work in progress ) project. Expect missing elements and/or bugs. We are small team
