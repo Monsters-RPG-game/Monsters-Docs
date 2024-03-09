@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
 import type { ReactElement } from 'react';
+import React from 'react';
 import { ECodeType } from '../enums';
 import type { ICodeFormatInput } from '../types/codeformat';
 
@@ -90,7 +91,7 @@ const formatJson = (data: Record<string, unknown>): ReactElement => {
 const formatEnv = (data: Record<string, unknown>): ReactElement => {
   const children: ReactElement[] = Object.entries(data).map(([k, v]) => {
     return (
-      <>
+      <React.Fragment key={`${k}:${v as string}`}>
         <p className="inline">
           <span style={{ whiteSpace: 'pre' }} className="text-rose-500 inline">
             &quot;{k}&quot;
@@ -98,7 +99,7 @@ const formatEnv = (data: Record<string, unknown>): ReactElement => {
           :<span className="text-blue-400 inline"> &quot;{v as string}&quot;</span>,
         </p>
         <br />
-      </>
+      </React.Fragment>
     );
   });
   return <div className="code">{children}</div>;
