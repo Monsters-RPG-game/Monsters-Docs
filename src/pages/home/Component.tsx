@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import * as animation from '../../style/animation';
 
 const Home: React.FC = () => {
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
           you can contribute.
         </p>
 
-        <h2 className="common-small-container_header">Whats this ?</h2>
+        <h2 className="common-small-container_header">1.1 Whats this ?</h2>
         <p className="my-3">
           Monsters is open-source backend for rpg games, written in node.js. Project is divided into
           &quot;microservices&quot;, which allows this project to better scale to users requirements. Most users are
@@ -25,7 +26,7 @@ const Home: React.FC = () => {
           usage of your servers.
         </p>
 
-        <h2 className="common-small-container_header">Philosophy</h2>
+        <h2 className="common-small-container_header">1.2 Philosophy</h2>
         <p className="my-3">
           Main idea behind this project is to create FOSS ( free and open-source ) software, that everyone can use. We
           believe, that by creating open projects, we make tech more accessible for other people. People who don&quot;t
@@ -34,7 +35,7 @@ const Home: React.FC = () => {
           more open and better.
         </p>
 
-        <h2 className="common-small-container_header">Services</h2>
+        <h2 className="common-small-container_header">1.3 Services</h2>
         <p className="my-3">
           Each service is unique and manages part of your game. You can learn more about each service, on its sub-page,
           which you can chose on the left. Lets break them down.
@@ -67,7 +68,7 @@ const Home: React.FC = () => {
           fully fledged client, but we are slowly going in good direction.
         </li>
 
-        <h2 className="common-small-container_header">Installation</h2>
+        <h2 className="common-small-container_header">1.4 Installation</h2>
         <p className="my-3">
           Every service in backend in written in node.js. In addition to that, application requires:
           <li>Mysql</li>
@@ -81,7 +82,23 @@ const Home: React.FC = () => {
           1.3 )
         </p>
 
-        <h2 className="common-small-container_header">Wrapping up</h2>
+        <h2 className="common-small-container_header">1.5 How can I pull all services at once to work on them ?</h2>
+        <p className="my-3">
+          <Link className="text-rose-600" to="services/head">
+            Head{' '}
+          </Link>
+          is service which includes all backend services and configs to start them. In order to initialize all services
+          to work on them, you can start dependencies in docker and run init.sh file in this repo. It will initialize
+          all services on its own. Keep in mind that this is script for linux. We are planning on writing 1 for windows
+          too
+        </p>
+
+        <h2 className="common-small-container_header">1.6 Example data flow</h2>
+        <p className="my-3">Diagram below shows example data flow in application</p>
+
+        <img src="../../../public/diagrams/general_overview.png" alt="Logo" />
+
+        <h2 className="common-small-container_header">1.7 Wrapping up</h2>
         <p className="my-3">
           Remember that this is WIP ( work in progress ) project. Expect missing elements and/or bugs. We are small team
           of people working in our free time. Wanna help ? Found a bug ? See anything wrong ? Drop new issue on{' '}

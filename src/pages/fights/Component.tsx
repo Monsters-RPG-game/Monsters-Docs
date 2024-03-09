@@ -87,6 +87,11 @@ const Fights: React.FC = () => {
           methods. MongoDB mocks are made using mongodb-memory-server. E2e tests are using mocked rabbitMQ connection
           and fake messages
         </p>
+
+        <h2 className="common-small-container_header">1.6 Initialization data flow</h2>
+        <p className="my-3">Diagram below shows application flow after it starts</p>
+
+        <img src="../../../public/diagrams/service_init.png" alt="Logo" />
       </main>
     </motion.div>
   );

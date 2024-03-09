@@ -8,5 +8,6 @@ import Fights from './fights/Component';
 import Messages from './messages/Component';
 import WebClient from './webclient/Component';
 import Head from './head/Component';
+import NewClient from './newClient/Component';
 
-export { Home, Contributions, FourOhFour, Gateway, Roadmap, Users, Fights, Messages, Head, WebClient };
+export { Home, Contributions, FourOhFour, Gateway, Roadmap, Users, Fights, Messages, Head, WebClient, NewClient };
