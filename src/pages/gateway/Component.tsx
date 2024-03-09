@@ -180,6 +180,11 @@ const Gateway: React.FC = () => {
           methods. E2e tests are using superTest to send requests on started server. Websocket tests are made using
           MocSocket
         </p>
+
+        <h2 className="common-small-container_header">1.6 Initialization data flow</h2>
+        <p className="my-3">Diagram below shows application flow after it starts</p>
+
+        <img src="../../../public/diagrams/gateway_init.png" alt="Logo" />
       </main>
     </motion.div>
   );
