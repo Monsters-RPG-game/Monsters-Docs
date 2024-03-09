@@ -76,6 +76,13 @@ const Head: React.FC = () => {
             is client for Mysql. Example: <span className="codeLine text-blue-400 block">client</span>
           </p>
         </span>
+
+        <h2 className="common-small-container_header">1.3 Automated script</h2>
+        <p className="my-3">
+          This project also includes script to automate initialization of all services. File is called
+          &quot;init.sh&quot; and its explained in &quot;head&quot; readme. In summary, this script will fetch latest
+          development version of each service, run npm install and initialize configs if files do not exist already
+        </p>
       </main>
     </motion.div>
   );

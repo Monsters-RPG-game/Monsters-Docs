@@ -78,7 +78,8 @@ const Home: React.FC = () => {
           Each service requires config files and each service uses different databases. You can find more about it in
           each service sub-page, or in each service README.MD file. Every project already has preconfigured example
           file, which you can clone and edit. Frontend application only requires npm to download dependencies and build
-          it
+          it. You can always initialize init.sh script from &quot;head&quot;. More on it in &quot;head&quot; category (
+          1.3 )
         </p>
 
         <h2 className="common-small-container_header">1.5 How can I pull all services at once to work on them ?</h2>
