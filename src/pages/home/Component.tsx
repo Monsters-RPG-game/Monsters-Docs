@@ -96,7 +96,7 @@ const Home: React.FC = () => {
         <h2 className="common-small-container_header">1.6 Example data flow</h2>
         <p className="my-3">Diagram below shows example data flow in application</p>
 
-        <img src="../../../public/diagrams/general_overview.png" alt="Logo" />
+        <img src="/general_overview.png" alt="Logo" />
 
         <h2 className="common-small-container_header">1.7 Wrapping up</h2>
         <p className="my-3">

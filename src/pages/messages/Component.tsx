@@ -92,7 +92,7 @@ const Messages: React.FC = () => {
         <h2 className="common-small-container_header">1.6 Initialization data flow</h2>
         <p className="my-3">Diagram below shows application flow after it starts</p>
 
-        <img src="../../../public/diagrams/service_init.png" alt="Logo" />
+        <img src="/service_init.png" alt="Logo" />
       </main>
     </motion.div>
   );
