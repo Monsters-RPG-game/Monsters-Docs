@@ -15,7 +15,7 @@ const Gateway: React.FC = () => {
           microservice. It also handles caching user&apos;s data, authorization and real-time notifications. You can
           find it on{' '}
           <a
-            href="https://github.com/Virus288/Monsters-gateway"
+            href="https://github.com/Monsters-RPG-game/Gateway"
             target="_blank"
             rel="noreferrer"
             className="leftsidebar-link group"
@@ -24,7 +24,7 @@ const Gateway: React.FC = () => {
           </a>
         </p>
 
-        <h2 className="common-small-container_header">1.1 Tech stack</h2>
+        <h2 className="common-small-container_header">2. Tech stack</h2>
         <p className="my-3">
           This service is written in node.js. Core components are:
           <li className="text-rose-400">
@@ -99,7 +99,7 @@ const Gateway: React.FC = () => {
           </li>
         </p>
 
-        <h2 className="common-small-container_header">1.2 Dependencies</h2>
+        <h2 className="common-small-container_header">3. Dependencies</h2>
         <p className="my-3">
           Gateway tries to connect to every other service. Besides that, it connects to:
           <li>Mysql</li>
@@ -107,7 +107,7 @@ const Gateway: React.FC = () => {
           <li>Redis</li>
         </p>
 
-        <h2 className="common-small-container_header">1.3 Config files</h2>
+        <h2 className="common-small-container_header">4. Config files</h2>
         <p className="my-3">
           In order to run gateway, you&apos;ll need running dependencies and 3 config files. In the future, we are
           planning on fixing config loader, so it will only require 1 config.
@@ -167,24 +167,31 @@ const Gateway: React.FC = () => {
           </p>
         </span>
 
-        <h2 className="common-small-container_header">1.4 Documentation</h2>
+        <h2 className="common-small-container_header">5. Documentation</h2>
         <p className="my-3">
           This application uses jsdoc for documenting methods in code. Alongside jsdoc, you can access swagger docs on
           route /docs. Swagger configs are created with package swagger-jsdoc. Full documentation alongside diagrams
           will be added here in the future.
         </p>
 
-        <h2 className="common-small-container_header">1.5 Tests</h2>
+        <h2 className="common-small-container_header">6. Tests</h2>
         <p className="my-3">
           This project has 3 types of tests. Unit, db and e2e. All tests are written in jest, which is also used to mock
           methods. E2e tests are using superTest to send requests on started server. Websocket tests are made using
           MocSocket
         </p>
 
-        <h2 className="common-small-container_header">1.6 Initialization data flow</h2>
+        <h2 className="common-small-container_header">7. Initialization data flow</h2>
         <p className="my-3">Diagram below shows application flow after it starts</p>
 
         <img src="../../../public/diagrams/gateway_init.png" alt="Logo" />
+
+        <h2 className="common-small-container_header">8. Login system</h2>
+        <p className="my-3">
+          Login system is done with OIDC. Oidc requires &apos;client&apos; for login system. Service will create generic
+          client in mysql database during migrations, on service start. Preconfigured client is set to handle login from
+          localhost and you should configure it yourself.
+        </p>
       </main>
     </motion.div>
   );

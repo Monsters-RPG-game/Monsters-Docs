@@ -8,17 +8,19 @@ const Roadmap: React.FC = () => {
       <h1 className="common-container_header ">Roadmap</h1>
       <main className="common-container_content">
         <p className="my-3">
-          Well. Its important to have 1 but in current state we don&apos;t. All we have now are personal notes of what
-          we can add to this project, and idea of how it should look like. Are you a game designer ? Would you like to
-          create idea of how this project should look like from user perspective? Create new issue on{' '}
+          Each service has issue called &apos;roadmap&apos;, which in current state is &apos;road to version 1.0&apos;.
+          When each service will reach this point, roadmap will be updated. If you want to access roadmap of specific
+          service, simply follow
           <a
-            href="https://github.com/Virus288/Monsters-gateway"
+            href="https://github.com/Monsters-RPG-game"
             target="_blank"
             rel="noreferrer"
             className="leftsidebar-link group"
           >
-            Github
+            {' '}
+            this link{' '}
           </a>
+          , select service you want and find issue called &apos;Roadmap&apos;
         </p>
       </main>
     </motion.div>

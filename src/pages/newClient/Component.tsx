@@ -12,7 +12,7 @@ const NewClient: React.FC = () => {
           requests. You can even create discord bot as client for this game.
         </p>
 
-        <h2 className="common-small-container_header">1.1 Users and authentication</h2>
+        <h2 className="common-small-container_header">2. Users and authentication</h2>
         <p className="my-3">
           This application uses OIDC as authorization system. Because of this, user is required to access login website,
           with params provided by your client. Valid login will redirect user to url specified in client&apos;s
@@ -25,7 +25,7 @@ const NewClient: React.FC = () => {
           disabled, because we did not yet create service for it. It will come in the future.
         </p>
 
-        <h2 className="common-small-container_header">1.2 State management</h2>
+        <h2 className="common-small-container_header">3. State management</h2>
         <p className="my-3">User created account, validated himself and you got bearer token in app. Whats next ?</p>
         <p className="my-3">
           First thing first, we need to fetch data about user&apos;s profile, in order to handle what he can or cannot
@@ -43,14 +43,14 @@ const NewClient: React.FC = () => {
           websocket, so asking for all messages can be done at start to know if user received any new messages or not.
         </p>
 
-        <h2 className="common-small-container_header">1.3 User&apos;s commands</h2>
+        <h2 className="common-small-container_header">4. User&apos;s commands</h2>
         <p className="my-3">
           Although it might not be important for you, you can store up to 100 &quot;commands&quot; that user sent. Our
           main client is text-based game and we use logs to store what user wrote as history. You can find more about it
           in swagger&apos;s documentation.
         </p>
 
-        <h2 className="common-small-container_header">1.4 Whats next?</h2>
+        <h2 className="common-small-container_header">5. Whats next?</h2>
         <p className="my-3">
           After initialization, user is ready to send messages and join fights. In current state other services are not
           yet ready to use them. In part, we have inventory management system, live chat and few other things, Sadly
