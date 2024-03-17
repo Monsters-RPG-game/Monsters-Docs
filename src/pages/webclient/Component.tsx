@@ -14,7 +14,7 @@ const WebClient: React.FC = () => {
           WebClient is game client written in react. Client is text-base and tries to emulate older text-based games.
           You can find it on{' '}
           <a
-            href="https://github.com/Virus288/Monsters-WebClient"
+            href="https://github.com/Monsters-RPG-game/WebClient"
             target="_blank"
             rel="noreferrer"
             className="leftsidebar-link group"
@@ -23,7 +23,7 @@ const WebClient: React.FC = () => {
           </a>
         </p>
 
-        <h2 className="common-small-container_header">1.1 Tech stack</h2>
+        <h2 className="common-small-container_header">2. Tech stack</h2>
         <p className="my-3">
           This service is written in React. Core components are:
           <li className="text-rose-400">
@@ -58,7 +58,7 @@ const WebClient: React.FC = () => {
           </li>
         </p>
 
-        <h2 className="common-small-container_header">1.1 Config files</h2>
+        <h2 className="common-small-container_header">3. Config files</h2>
         <p className="my-3">In order to run this service, you&apos;ll need .env file.</p>
         {generateCode(ECodeType.Json, configFile)}
 
@@ -97,13 +97,13 @@ const WebClient: React.FC = () => {
           </p>
         </span>
 
-        <h2 className="common-small-container_header">1.2 Documentation</h2>
+        <h2 className="common-small-container_header">4. Documentation</h2>
         <p className="my-3">
           This application uses jsdoc for documenting methods in code. Full documentation alongside diagrams will be
           added here in the future.
         </p>
 
-        <h2 className="common-small-container_header">1.3 Tests</h2>
+        <h2 className="common-small-container_header">5, Tests</h2>
         <p className="my-3">
           Currently, this project has no tests. We are planning writing tests with jest and e2e tests with cypress
         </p>

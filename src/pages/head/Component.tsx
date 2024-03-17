@@ -14,7 +14,7 @@ const Head: React.FC = () => {
           Head is application, which contains docker configuration files alongside all services added as git submodules
           Its job is to allow quick access to all required code. You can find it on{' '}
           <a
-            href="https://github.com/Virus288/Monsters-head"
+            href="https://github.com/Monsters-RPG-game/Head"
             target="_blank"
             rel="noreferrer"
             className="leftsidebar-link group"
@@ -23,7 +23,7 @@ const Head: React.FC = () => {
           </a>
         </p>
 
-        <h2 className="common-small-container_header">1.1 Tech stack</h2>
+        <h2 className="common-small-container_header">2. Tech stack</h2>
         <p className="my-3">
           This service is stack of configuration files. You can find inside
           <li className="my-1">Configs for docker all dependencies</li>
@@ -31,7 +31,7 @@ const Head: React.FC = () => {
           <li className="my-1">Preconfigured makefile</li>
         </p>
 
-        <h2 className="common-small-container_header">1.2 Config files</h2>
+        <h2 className="common-small-container_header">3. Config files</h2>
         <p className="my-3">
           In order to run this service, you&apos;ll need running .env file with configs for dependencies
         </p>
@@ -77,7 +77,7 @@ const Head: React.FC = () => {
           </p>
         </span>
 
-        <h2 className="common-small-container_header">1.3 Automated script</h2>
+        <h2 className="common-small-container_header">4. Automated script</h2>
         <p className="my-3">
           This project also includes script to automate initialization of all services. File is called
           &quot;init.sh&quot; and its explained in &quot;head&quot; readme. In summary, this script will fetch latest

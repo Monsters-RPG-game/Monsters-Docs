@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           you can contribute.
         </p>
 
-        <h2 className="common-small-container_header">1.1 Whats this ?</h2>
+        <h2 className="common-small-container_header">2. Whats this ?</h2>
         <p className="my-3">
           Monsters is open-source backend for rpg games, written in node.js. Project is divided into
           &quot;microservices&quot;, which allows this project to better scale to users requirements. Most users are
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           usage of your servers.
         </p>
 
-        <h2 className="common-small-container_header">1.2 Philosophy</h2>
+        <h2 className="common-small-container_header">3. Philosophy</h2>
         <p className="my-3">
           Main idea behind this project is to create FOSS ( free and open-source ) software, that everyone can use. We
           believe, that by creating open projects, we make tech more accessible for other people. People who don&quot;t
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
           more open and better.
         </p>
 
-        <h2 className="common-small-container_header">1.3 Services</h2>
+        <h2 className="common-small-container_header">4. Services</h2>
         <p className="my-3">
           Each service is unique and manages part of your game. You can learn more about each service, on its sub-page,
           which you can chose on the left. Lets break them down.
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
           fully fledged client, but we are slowly going in good direction.
         </li>
 
-        <h2 className="common-small-container_header">1.4 Installation</h2>
+        <h2 className="common-small-container_header">5. Installation</h2>
         <p className="my-3">
           Every service in backend in written in node.js. In addition to that, application requires:
           <li>Mysql</li>
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
           1.3 )
         </p>
 
-        <h2 className="common-small-container_header">1.5 How can I pull all services at once to work on them ?</h2>
+        <h2 className="common-small-container_header">6. How can I pull all services at once to work on them ?</h2>
         <p className="my-3">
           <Link className="text-rose-600" to="services/head">
             Head{' '}
@@ -93,17 +93,17 @@ const Home: React.FC = () => {
           too
         </p>
 
-        <h2 className="common-small-container_header">1.6 Example data flow</h2>
+        <h2 className="common-small-container_header">7. Example data flow</h2>
         <p className="my-3">Diagram below shows example data flow in application</p>
 
         <img src="../../../public/diagrams/general_overview.png" alt="Logo" />
 
-        <h2 className="common-small-container_header">1.7 Wrapping up</h2>
+        <h2 className="common-small-container_header">8. Wrapping up</h2>
         <p className="my-3">
           Remember that this is WIP ( work in progress ) project. Expect missing elements and/or bugs. We are small team
           of people working in our free time. Wanna help ? Found a bug ? See anything wrong ? Drop new issue on{' '}
           <a
-            href="https://github.com/Virus288/Monsters-gateway"
+            href="https://github.com/Monsters-RPG-game/Gateway"
             target="_blank"
             rel="noreferrer"
             className="leftsidebar-link group"
