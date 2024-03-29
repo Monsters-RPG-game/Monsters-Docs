@@ -3,6 +3,8 @@ import type { ReactElement } from 'react';
 import React from 'react';
 import { ECodeType } from '../enums';
 import type { ICodeFormatInput } from '../types/codeformat';
+import useClipboardCopy from '../hooks/useClipboardCopy';
+
 
 const space = `${'    '}`;
 
@@ -17,10 +19,12 @@ const generateSpace = (lvl: number): string => {
 const createChildren = (data: Record<string, unknown>, lvl: number, nested = false): ReactElement[] => {
   const children: ReactElement[] = [];
 
+
   if (nested) {
     children.push(
       <span style={{ whiteSpace: 'pre' }} className="inline">
         {' {'}
+
       </span>,
     );
     children.push(<br />);
@@ -84,11 +88,21 @@ const formatJson = (data: Record<string, unknown>): ReactElement => {
   children.push(<br />);
   children = [...children, ...createChildren(data, 1)];
   children.push(<span>{'}'}</span>);
+  const { copyToClipboard, copyMessage } = useClipboardCopy();
+  return <div className="code relative">{children}
+    <button
+      className={`absolute top-[2%] right-[0.3%] px-1 py-0.5 text-base rounded-sm ${copyMessage === 'Copy' && "hover:bg-rose-900"}`}
+      onClick={() => copyToClipboard(JSON.stringify(data))}
+    >
+      {copyMessage === 'Copy' ? `📋${copyMessage}` : `✅${copyMessage}`}
 
-  return <div className="code">{children}</div>;
+    </button>
+
+  </div>;
 };
 
 const formatEnv = (data: Record<string, unknown>): ReactElement => {
+
   const children: ReactElement[] = Object.entries(data).map(([k, v]) => {
     return (
       <React.Fragment key={`${k}:${v as string}`}>
@@ -102,7 +116,17 @@ const formatEnv = (data: Record<string, unknown>): ReactElement => {
       </React.Fragment>
     );
   });
-  return <div className="code">{children}</div>;
+
+  const { copyToClipboard, copyMessage } = useClipboardCopy();
+  return <div className="code relative">{children}
+    <button
+      className={`absolute top-[2%] right-[0.3%] px-1 py-0.5 text-base rounded-sm ${copyMessage === 'Copy' && "hover:bg-rose-900"}`}
+      onClick={() => copyToClipboard(JSON.stringify(data))}
+    >
+      {copyMessage === 'Copy' ? `📋${copyMessage}` : `✅${copyMessage}`}
+
+    </button>
+  </div >;
 };
 
 const generateCode = <T extends ECodeType>(type: T, data: ICodeFormatInput[T]): ReactElement | null => {
